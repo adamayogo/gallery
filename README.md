@@ -1,7 +1,7 @@
 # Gallery
 
 ## About
-100 Days of Artifacts Gallery
+http://100days.akineticblog.com/
 
 ## How to build
 First, make sure that you have installed the required global npm packages: `npm install gulp --global --no-optional`.
