@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid" class="uil-ring">
+  <style><![CDATA[
+    @keyframes spinnerSpin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    g {
+      animation: spinnerSpin 1s infinite linear;
+      transform-origin: 50% 50%;
+    }
+  ]]></style>
+  <g>
+    <circle cx="50" cy="50" r="40" stroke-dasharray="163.4 88" stroke="#d8d4d5" fill="none" stroke-width="9" stroke-linecap="round"></circle>
+    <circle cx="50" cy="50" r="40" stroke-dasharray="163.4 88" stroke="#231f20" fill="none" stroke-width="6" stroke-linecap="round"></circle>
+  </g>
+</svg>

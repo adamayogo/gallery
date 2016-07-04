@@ -1,0 +1,10 @@
+<hud class="hud" [infoButton]="false"></hud>
+<div class="thumbs">
+	<div class="thumb" *ngFor="#art of Artifacts">
+		<!--<a [href]="'/#/'+art.id">-->
+		<a [routerLink]="['', 'View', { id: art.id }]">
+			<img [src]="'images/artifacts/' + art.id + 't.jpg'">
+			<div class="thumb-hover" [innerHtml]="art.id"></div>
+		</a>
+	</div>
+</div>

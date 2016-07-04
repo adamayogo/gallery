@@ -1,0 +1,95 @@
+///
+/// All styles for the Home page
+///
+
+$half: 1/2;
+$third: 1/3;
+$quarter: 1/4;
+$fifth: 1/5;
+$sixth: 1/6;
+
+$media-w1: 320px;
+$media-w2: 640px;
+$media-w3: 960px;
+$media-w4: 1280px;
+
+@mixin home($multi) {
+
+  .hud ~ .thumbs {
+	top: $hudHeight * $multi;
+	position: relative;
+  }
+
+  .thumb {
+	position: relative;
+	display: inline-block;
+	overflow: hidden;
+	vertical-align: top;
+
+	width: $sixth * 100%;
+	@media (max-width: $media-w4) {
+	  width: $fifth * 100%;
+	}
+	@media (max-width: $media-w3) {
+	  width: $quarter * 100%;
+	}
+	@media (max-width: $media-w2) {
+	  width: $third * 100%;
+	}
+	@media (max-width: $media-w1) {
+	  width: $half * 100%;
+	}
+
+	img {
+	  width: 100%;
+	}
+
+	.thumb-hover {
+	  position: absolute;
+	  width: 100%;
+	  height: 100%;
+	  left: 50%;
+
+	  color: transparentize(#FFF, 0.2);
+	  background-color: transparentize(#222, 0.4);
+	  text-align: center;
+
+	  transform-origin: 50% 0;
+	  transform: translate(0, 0) rotate(-45deg);
+	  transition: transform 0.15s;
+
+	  font-size: $sixth * 15vw;
+	  @media (max-width: $media-w4) {
+		font-size: $fifth * 15vw;
+	  }
+	  @media (max-width: $media-w3) {
+		font-size: $quarter * 15vw;
+	  }
+	  @media (max-width: $media-w2) {
+		font-size: $third * 15vw;
+	  }
+	  @media (max-width: $media-w1) {
+		font-size: $half * 15vw;
+	  }
+	}
+  }
+
+  .thumb:hover {
+	.thumb-hover {
+	  transform: translate(-20%, -20%) rotate(-45deg);
+	}
+  }
+}
+
+@media screen and (max-width: 480px) {
+  @include home(0.65);
+}
+@media screen and (min-width: 481px) and (max-width: 640px) {
+  @include home(0.75);
+}
+@media screen and (min-width: 641px) and (max-width: 800px) {
+  @include home(0.85);
+}
+@media screen and (min-width: 801px) {
+  @include home(1);
+}

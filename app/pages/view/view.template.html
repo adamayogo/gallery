@@ -1,0 +1,47 @@
+<hud class="hud" [infoButton]="true" (infoToggled)="infoToggled($event)"></hud>
+<div class="view" *ngIf="idValid">
+	<!-- Oops! -->
+
+	<!-- Background -->
+	<div
+    	class="background"
+    	[style.background-color]="currentArtifact.backgroundColour">
+	</div>
+
+	<!-- Spinner --> 
+	<div class="spinner" *ngIf="(! imageLoaded)">
+		<img src="images/spinner.svg">
+	</div>
+
+  	<!-- Main content -->
+  	<div
+  		class="image"
+  		[ngStyle]="{'background-image': 'url(' + assetUrl + ')'}"
+  		[ngClass]="{'pixelated': currentArtifact.pixelated, 'no-opacity': ! imageLoaded}">
+  	</div>
+	
+	<!-- Arrows -->
+	<a [routerLink]="['', 'View', { id: previousId }]" *ngIf="previousId">
+		<div class="left-hit">
+			<img class="left-arrow" src="images/left-arrow.svg">
+		</div>
+	</a>
+	<a [routerLink]="['', 'View', { id: nextId }]" *ngIf="nextId">
+		<div class="right-hit">
+			<img class="right-arrow" src="images/right-arrow.svg">
+		</div>
+	</a>
+	
+	<!-- Info panel -->
+	<div class="info"
+		 [ngClass]="{'info-down': infoDown }">
+		<h3 class="title" [innerHtml]="currentArtifact.id + '. ' + currentArtifact.title"></h3>
+		<p [innerHtml]="currentArtifact.notes"></p>
+		<span>Materials:</span>
+		<ul>
+			<li *ngFor="#mat of currentArtifact.materials" [innerHtml]="mat"></li>
+		</ul>
+	</div>
+	
+</div>
+

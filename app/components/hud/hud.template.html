@@ -1,0 +1,8 @@
+<a href="#/"><img class="logo" src="images/100logo.svg">
+<span class="title">100 DAYS</span></a>
+<span class="subtitle">ADAM VERNON</span>
+
+<div class="info-button" *ngIf="infoButton" (click)="toggleInfo()">
+	<img *ngIf="infoDown" class="right-arrow" src="images/info-down.svg">
+	<img *ngIf="! infoDown" class="right-arrow" src="images/info-up.svg">
+</div>

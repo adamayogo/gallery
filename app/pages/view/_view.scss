@@ -1,0 +1,162 @@
+///
+/// All styles for the view page
+///
+
+@mixin view($multi) {
+
+  $_hudHeight: $hudHeight * $multi;
+
+  .hud ~ .view {
+	top: $_hudHeight;
+  }
+
+  .view {
+	height: calc(100vh - #{$_hudHeight});
+	position: relative;
+	background-color: black;
+
+	.image {
+	  width: 100%;
+	  height: 100%;
+	  position: absolute;
+
+	  background-size: contain;
+	  background-repeat: no-repeat;
+	  background-position: center center;
+	  transition: opacity 0.15s linear;
+
+	  &.pixelated {
+		image-rendering: pixelated;
+	  }
+	}
+
+	.background {
+	  width: 100%;
+	  height: 100%;
+	  position: absolute;
+	  transition: opacity 0.25s linear;
+	}
+
+	.spinner {
+	  position: absolute;
+
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
+	  width: 100%;
+	  height: 100%;
+
+	  img {
+		width: 73px*$multi;
+		height: 73px*$multi;
+		g {
+		  will-change: transform;
+		}
+	  }
+	}
+
+	.no-opacity {
+	  opacity: 0;
+	}
+
+	.partial-opacity {
+	  opacity: 0.6;
+	}
+
+	.hit {
+	  height: 100%;
+	  width: 33%;
+	  position: absolute;
+	}
+	.left-hit {
+	  @extend .hit;
+	  left: 0;
+	}
+	.right-hit {
+	  @extend .hit;
+	  right: 0;
+	}
+
+	.arrow {
+	  position: absolute;
+	  top: calc(50% - (57.5px * #{$multi}));
+	  width: 26px*$multi;
+	  height: 115px*$multi;
+	}
+	.left-arrow {
+	  @extend .arrow;
+	  left: 10px*$multi;
+	}
+	.right-arrow {
+	  @extend .arrow;
+	  right: 10px*$multi;
+	}
+	
+	.info {
+	  
+	  .title {
+		font-size: 22px*$multi;
+		text-transform: uppercase;
+		font-weight: 100;
+	  }
+	  
+	  p {
+		margin: 14px*$multi 0;
+	  }
+	  
+	  position: absolute;
+	  max-width: 800px;
+	  max-height: calc(100vh - #{$_hudHeight});
+	  right: 0;
+	  overflow-y: auto;
+	  
+	  border-radius: 0 0 15px*$multi 15px*$multi;
+	  padding: 20px*$multi;
+	  margin: 0 10px;
+	  letter-spacing: 0.8px;
+	  
+	  font-size: 18px*$multi;
+	  
+	  color: $offWhite;
+	  background-color: rgba($charcoal, 0.8);
+
+	  transform: translate3d(0,0,0);
+	  transition: transform 0.25s ease;
+
+	  ol {
+		list-style: decimal;
+		margin: 10px*$multi 0;
+	  }
+	  ul {
+		list-style: circle;
+		margin: 10px*$multi 0;
+	  }
+	  li {
+		display: list-item;
+		margin-left: 1.5em;
+	  }
+	  
+	  a {
+		color: #eaeaea;
+		font-weight: 500;
+	  }
+	}
+	.info-down {
+	  transform: translate3d(0,-100%,0);
+	}
+
+  }
+}
+
+@media screen and (max-width: 480px) {
+  @include view(0.65);
+}
+@media screen and (min-width: 481px) and (max-width: 640px) {
+  @include view(0.75);
+}
+@media screen and (min-width: 641px) and (max-width: 800px) {
+  @include view(0.85);
+}
+@media screen and (min-width: 801px) {
+  @include view(1);
+}
