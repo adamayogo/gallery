@@ -5,7 +5,7 @@ var Artifacts:IArtifact[] = [
     "id": "01",
     "extension": "png",
     "title": "Expectations",
-    "notes": "The first piece in the exercise was one of the hardest to create. I announced the plan without any particular starting idea, trying to throw myself in the deep end before I talked myself out of it. As a consequence, I wasted a lot of time sketching completely unrelated things before eventually settling on this.",
+    "notes": "The first piece in the exercise was one of the hardest to create. I announced the plan online without any particular starting idea, trying to throw myself in the deep end before I talked myself out of it. As a consequence, I wasted a lot of time sketching completely unrelated things before eventually settling on this.",
     "materials": [
       "Illustrator",
       "Photoshop"
@@ -18,7 +18,7 @@ var Artifacts:IArtifact[] = [
     "id": "02",
     "extension": "jpg",
     "title": "Woody",
-    "notes": "This was drawn based on a photo of a tree carving. It was relatively low-effort and the result was underwhelming, but I wanted a simpler concept with which to bee-line to completion, in contrast to the first day's lack of direction.",
+    "notes": "This was drawn based on a photo of a tree carving. It was relatively low-effort and the result was underwhelming, but I wanted a simpler concept with which I could bee-line to completion, in contrast to the first day's lack of direction.",
     "materials": [
       "Fineliner on paper",
       "Photoshop"
@@ -31,7 +31,7 @@ var Artifacts:IArtifact[] = [
     "id": "03",
     "extension": "png",
     "title": "Fish out of water",
-    "notes": "It's fun, if slightly painful, to reflect on the awkward approach I took with this, in light of what I learned about Illustrator over the course of the project. Going about things the \"wrong\" way isn't always wasteful though, and the end result is more important.",
+    "notes": "It's fun, if slightly painful, to reflect on the awkward approach I took with this, in light of what I learned about Illustrator over the course of the project. Going about things the \"wrong\" way isn't always wasteful though, and the end result matters more.",
     "materials": [
       "Fineliner on paper (initial sketch)",
       "Illustrator"
@@ -44,7 +44,7 @@ var Artifacts:IArtifact[] = [
     "id": "04",
     "extension": "gif",
     "title": "Cube tube",
-    "notes": "Although I've worked with Flash and AS3 a great deal in the past for web applications, I rarely used the IDE's timeline, since linear animation is often at odds with interactivity. This animation used only shape tweens on the timeline, and no code, which fitted the project's non-interactive aims, but still felt oddly dirty...\r",
+    "notes": "Although I've worked with Flash and AS3 a great deal in the past for web applications, I rarely used the IDE's timeline, since linear animation is often at odds with interactivity. This animation used only shape tweens on the timeline, and no code, which fitted the project's non-interactive aims, but still felt... dirty.",
     "materials": [
       "Flash Pro IDE",
       "SWF Renderer",
@@ -73,7 +73,7 @@ var Artifacts:IArtifact[] = [
     "id": "06",
     "extension": "gif",
     "title": "Orthogonal ripple",
-    "notes": "Throughout the project, I didn't want the methods of what I made (or how I felt about those methods) to complicate the finished article. But I made this as an open source piece on <a href=\"http://codepen.io/\">Codepen</a> because it seemed like a good fit for the idea. It was probably the first day on the project when I had a very clear picture of what I wanted to achieve before starting, which usually leads to less messy and shameful source code.",
+    "notes": "Throughout the project, I didn't want the methods of what I made (or how I felt about those methods) to complicate the finished article. But I made this as an open source piece on <a href=\"http://codepen.io/\" target=\"_blank\">codepen.io</a> because it seemed like a good fit for the idea. It was probably the first day on the project when I had a very clear picture of what I wanted to achieve before starting, which is one of the better ways of avoiding shamefully messy source code. (<a href=\"http://codepen.io/hanenbro/pen/avVVwJ\" target=\"_blank\">Live version.</a>)",
     "materials": [
       "HTML (Slim)",
       "CSS (LESS)"
@@ -86,7 +86,7 @@ var Artifacts:IArtifact[] = [
     "id": "07",
     "extension": "jpg",
     "title": "Hexagoon",
-    "notes": "This was my first attempt at using <a href=\"http://www.marmoset.co/hexels\">Hexels</a>, and the default balance of geometric shapes and an organic glow make it very rewarding for creating images in its signature style. There was an absence of the expect safety net that comes with Photoshop-esque apps: everything is on a single layer. It looks like this has already been addressed in the latest version, but the need to make bolder decisions was refreshing.",
+    "notes": "This was my first attempt at using <a href=\"http://www.marmoset.co/hexels\" target=\"_blank\">Hexels</a>, and the default balance of geometric shapes and an organic glow make it very rewarding for creating images in its signature style. There was an absence of the expected safety net that comes with Photoshop-esque apps: everything is on a single layer. It looks like this has already been changed in a updated verison of Hexels, but the need to make bolder decisions was a refreshing challenge.",
     "materials": [
       "Hexels",
       "Photoshop"
@@ -101,8 +101,7 @@ var Artifacts:IArtifact[] = [
     "title": "Boris",
     "notes": "Another drawing from a photo, found this time by going through Reuters' images of the week.",
     "materials": [
-      "Pencil on paper",
-      "Photoshop"
+      "Pencil on paper"
     ],
     "complete": true,
     "pixelated": false,
@@ -112,7 +111,7 @@ var Artifacts:IArtifact[] = [
     "id": "09",
     "extension": "png",
     "title": "Displacer",
-    "notes": "This started out as a tracing of a photo I took of an unusual looking lamppost in Harrison. (There's no limit to the shit people will try to pass off as art!)",
+    "notes": "This started out as a tracing of a photo I took of an unusual looking lamppost in Harrison, B.C. (There is no limit to the shit some people will try to pass off as art!)",
     "materials": [
       "DSLR",
       "Sigma f1.4 30mm",
@@ -139,7 +138,7 @@ var Artifacts:IArtifact[] = [
     "id": "11",
     "extension": "png",
     "title": "Diorama",
-    "notes": "Perversion II: A 2D illustration, angling to be mistaken for 3D.",
+    "notes": "Perversion II: A 2D illustration, angling to be mistaken for depth.",
     "materials": [
       "Illustrator"
     ],
@@ -151,7 +150,7 @@ var Artifacts:IArtifact[] = [
     "id": "12",
     "extension": "jpg",
     "title": "Happy Chopper",
-    "notes": "I based this on a photo found online, and used a mix of grey and black fineliners. In retrospect, drawing the underlying sketch in pencil would have had a similar visual effect while accommodating the erasing and proportion correction that the piece could have used. But on the other hand, there are a lot of bikes out there that have been stomped into obsolescence, so let's just say that was my plan all along.",
+    "notes": "I based this on a photo found online, and used a mix of grey and black fineliners. In retrospect, drawing the underlying sketch in pencil would have had a similar visual effect, but with the added benefit of the erasing and proportion correction that the piece could have used. But on the other hand, there are a lot of bikes out there that have been stomped into obsolescence, so let's just say that was my plan all along.",
     "materials": [
       "Fineliner on paper",
       "Photoshop"
@@ -164,7 +163,7 @@ var Artifacts:IArtifact[] = [
     "id": "13",
     "extension": "jpg",
     "title": "Permalight",
-    "notes": "When compared to manually drawing or programming a piece from scratch, taking photographs often felt like a cheating, and so I usually tried to spend more time in the post-processing phase to compensate.",
+    "notes": "When compared to manually drawing or programming a piece from scratch, taking photographs often felt like a cheating, and so I usually tried to spend more time in the post-processing phase to compensate. (Not necessarily to the benefit of the piece.)",
     "materials": [
       "DSLR",
       "Sigma 8-16mm f4.5-5.6",
@@ -204,7 +203,7 @@ var Artifacts:IArtifact[] = [
     "id": "16",
     "extension": "png",
     "title": "Darkroot",
-    "notes": "This one is officially fan art, for the action-RPG Dark Souls, digitally painted with reference to an in game screenshot. The low light definitely helped to mask the amateurism, and I found that adding several layers of translucent paint was useful for creating realistic texture. (And more broadly, the time spent building up and refining texture and light is what transitions a digital painting from garbage to greatness, as can be seen in watching professional artists at work.)",
+    "notes": "This one is officially fan art, for the action-RPG Dark Souls, digitally painted with reference to an in game screenshot. The low light definitely helped to mask the amateurism, and I found that adding several layers of translucent paint was useful for creating realistic texture. (And more broadly, the time spent building up and refining texture and light is what transitions a digital painting from garbage to greatness, as I've found when watching professional artists at work.)",
     "materials": [
       "Photoshop"
     ],
@@ -216,7 +215,7 @@ var Artifacts:IArtifact[] = [
     "id": "17",
     "extension": "jpg",
     "title": "Oscar of Astora",
-    "notes": "The second consecutive (but also final) piece of Dark Souls fan art, made primarily with awesome mobile app <a href=\"http://pixly.meltinglogic.com/\">Pixly</a> and a stylus. One thing I learned the hard way: creating pixel line art without considering line and fill colour can corner you later. ",
+    "notes": "The second consecutive (but also final) piece of Dark Souls fan art, made primarily with awesome mobile app <a href=\"http://pixly.meltinglogic.com/\" target=\"_blank\">Pixly</a> and a stylus. One thing I learned the hard way: creating pixel line art without considering line and fill colour can corner you later.",
     "materials": [
       "Pixly",
       "Photoshop"
@@ -229,7 +228,7 @@ var Artifacts:IArtifact[] = [
     "id": "18",
     "extension": "gif",
     "title": "Cube-lapse",
-    "notes": "For many of the programmed pieces in this project, I employed a vector-based AS3 3D engine called <a href=\"https://code.google.com/archive/p/five3d/\">FIVe3d</a>. It has a lot of pain points, but working with raw vectors (instead of rendering straight to pixels) has some nice advantages.",
+    "notes": "For many of the programmed pieces in this project, I employed a vector-based AS3 3D engine called <a href=\"https://code.google.com/archive/p/five3d/\" target=\"_blank\">FIVe3d</a>. It has a lot of pain points, but working with raw vectors (instead of rendering straight to pixels) has some nice advantages.",
     "materials": [
       "AS3 (FlashDevelop)",
       "Photoshop"
@@ -282,7 +281,7 @@ var Artifacts:IArtifact[] = [
     "id": "22",
     "extension": "jpg",
     "title": "Corsac fox",
-    "notes": "I wasn't enamoured with the result here, but I was glad at least to feel up to making an uncomplicated pencil sketch - for better or worse.",
+    "notes": "I wasn't enamoured with the result here, but I was glad at least to feel bold enough to attempt an uncomplicated pencil sketch - for better or worse.",
     "materials": [
       "Mechanical pencil on paper"
     ],
@@ -358,7 +357,7 @@ var Artifacts:IArtifact[] = [
     "id": "28",
     "extension": "gif",
     "title": "Circle twist",
-    "notes": "Before starting this piece, I knew I wanted to learn about and work with animated SVGs, but didn't have the clearest idea of what to make. Using Illustrator to create static visual elements components and then <a href=\"http://snapsvg.io/\">Snap.svg</a> to animate them was a great workflow, but the finished animation could easily have been created without any starting assets. The lack of design ambition led to an underwhelming result, but on balance there wasn't time to design more interesting visual elements in addition to meeting the technical challenges.",
+    "notes": "Before starting this piece, I knew I wanted to learn about and work with animated SVGs, but didn't have the clearest idea of what to make. Using Illustrator to create static visual elements components and then <a href=\"http://snapsvg.io/\" target=\"_blank\">Snap.svg</a> to animate them was a great workflow, but the finished animation could easily have been created without any starting assets. The lack of design ambition led to an underwhelming result, but on balance there wasn't time to design more interesting visual elements in addition to meeting the technical challenges. (<a href=\"http://codepen.io/hanenbro/pen/MaPXQM\" target=\"_blank\">Live version.</a>)",
     "materials": [
       "Illustrator (exporting to SVG)",
       "JS (TypeScript)"
@@ -685,7 +684,7 @@ var Artifacts:IArtifact[] = [
     "id": "53",
     "extension": "jpg",
     "title": "Lake Bled",
-    "notes": "There are a lot of beautiful photos of this castle on Lake Bled in Slovenia, and I drew this with reference to one such stock image. My hatched shading is very much hit and miss here, but I can only improve (or possibly worsen).",
+    "notes": "There are a lot of beautiful photos of this castle on Lake Bled in Slovenia, and I drew this with reference to one such stock image. My hatched shading is very much hit and miss here, but I can only improve with time. (Or possibly worsen.)",
     "materials": [
       "Fineliners on paper"
     ],
@@ -1012,7 +1011,7 @@ var Artifacts:IArtifact[] = [
     "id": "78",
     "extension": "jpg",
     "title": "Entwined",
-    "notes": "I think a good test of whether abstract art stands up on its own is whether I would wear the design on a t-shirt. In this case I would, but it's still not clear whether it is in fact a good measure, or whether I'm just a massive chump.",
+    "notes": "I think a good test of whether abstract art stands up on its own is whether I would wear the design on a t-shirt. In this case I would, but that's not to say it's actually a good measure; I may just be an idiot with bad taste.",
     "materials": [
       "Illustrator",
       "Photoshop"
@@ -1025,7 +1024,7 @@ var Artifacts:IArtifact[] = [
     "id": "79",
     "extension": "jpg",
     "title": "Kirkhammer",
-    "notes": "This is the fourth and last piece of video game fan art - Bloodborne again - and the ridiculous 'Kirkhammer' trick weapon: a transforming short-sword / giant stone hammer. I really enjoy writing and drawing with the pen I used for this: it's a super-fine 0.5mm tipped Pilot ballpoint, and they are discontinued. I haven't found any other pens like it, so if you know of any please give me a shout!",
+    "notes": "This is the fourth and last piece of video game fan art - Bloodborne again - and the ridiculous transforming short-sword / giant stone hammer. I really enjoy writing and drawing with the pen I used for this: it's a super-fine 0.5mm tipped Pilot ballpoint, and they are discontinued. I haven't found any other pens like it, so if you know of any please give me a shout!",
     "materials": [
       "Ballpoint on paper"
     ],
@@ -1037,7 +1036,7 @@ var Artifacts:IArtifact[] = [
     "id": "80",
     "extension": "gif",
     "title": "A line",
-    "notes": "I've gradually found that the more randomness you introduce into how a colour palette is used, the less you can depend that the final composition will work. For this animation, I picked five or so colours, and was happy with them. As it turned out, I needed greater variety in the lines, and so I allowed the colours a range of blend modes and opacities, and the result ended up muddled.",
+    "notes": "I've gradually found that the more randomness you introduce into how a colour palette is used, the less you can depend that the final composition will work. For this animation, I picked five or so colours, and was happy with them. As it turned out, I needed greater variety in the lines, and so I allowed the colours a range of blend modes and opacities, and the result ended up muddled. Were I to do it again, I'd probably explore for more complementary colours in the same way, but then curate and lock them in, to avoid any generative surprises.",
     "materials": [
       "Flash Pro IDE",
       "Photoshop"
@@ -1050,7 +1049,7 @@ var Artifacts:IArtifact[] = [
     "id": "81",
     "extension": "jpg",
     "title": "Yorkie",
-    "notes": "Here I am, once again forgetting that lesson about drawing light on dark. The subject is probably unrecognisable, but let's just say he's OK with computers, although his head's more firmly into radios.",
+    "notes": "Here I am, once again forgetting that lesson about drawing light on dark. The subject is probably unrecognisable, but let's just say he's OK with computers, although his head's more into radios.",
     "materials": [
       "White charcoal pencil on paper"
     ],
@@ -1075,7 +1074,7 @@ var Artifacts:IArtifact[] = [
     "id": "83",
     "extension": "gif",
     "title": "Exaggerated hex aberrations",
-    "notes": "Chromatic aberration as a simulated effect has been getting an unfavourable rap lately, mostly thanks to its overuse in video games, at points where it has no justifiable presence. I think the complaints are valid, but that doesn't mean it's not still kickin' rad watching light refract.",
+    "notes": "Chromatic aberration, as a simulated effect, has been getting an unfavourable rap lately, mostly thanks to its overuse in video games, at points where it has no justifiable presence. I think the complaints are valid, but that doesn't mean it's not still kickin' rad watching light refract.",
     "materials": [
       "Flash Pro IDE",
       "Photoshop"
@@ -1177,9 +1176,9 @@ var Artifacts:IArtifact[] = [
   },
   {
     "id": "91",
-    "extension": "cdp",
+    "extension": "gif",
     "title": "Catboard box",
-    "notes": "This was another web animation that I left as open source, on Codepen. It was fun to make, but it really cemented for me the limitations of animating with CSS alone. A better approach would have been to mix in some JS, but it's rewarding to push up against constraints sometimes too.",
+    "notes": "This was another web animation that I left as open source, on Codepen. It was fun to make, but it really cemented for me the limitations of animating with CSS alone. A better approach would have been to mix in some JS, but it's rewarding to push up against constraints sometimes too. (<a href=\"http://codepen.io/hanenbro/pen/EPXaeb\" target=\"_blank\">Live version.</a>)",
     "materials": [
       "Photoshop",
       "HTML",

@@ -3,6 +3,11 @@
 <span class="subtitle">ADAM VERNON</span>
 
 <div class="info-button" *ngIf="infoButton" (click)="toggleInfo()">
-	<img *ngIf="infoDown" class="right-arrow" src="images/info-down.svg">
-	<img *ngIf="! infoDown" class="right-arrow" src="images/info-up.svg">
+	<img *ngIf="infoDown" src="images/info-down.svg">
+	<img *ngIf="! infoDown" src="images/info-up.svg">
+</div>
+
+<div class="info-button" *ngIf="introButton" (click)="toggleIntro()">
+	<img *ngIf="introDown" src="images/home-info.svg">
+	<img *ngIf="! introDown" src="images/info-up.svg">
 </div>

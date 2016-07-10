@@ -15,7 +15,13 @@ $media-w4: 1280px;
 
 @mixin home($multi) {
 
-  .hud ~ .thumbs {
+  .info-home {
+    position: fixed;
+    top: $hudHeight * $multi;
+    z-index: 1;
+  }
+
+  .thumbs {
 	top: $hudHeight * $multi;
 	position: relative;
   }

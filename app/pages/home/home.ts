@@ -15,6 +15,11 @@ import {Hud} from "../../components/hud/hud";
 
 export class Home {
 
+  public introDown:boolean = true;
 	public Artifacts = Artifacts.filter(a => {return a.complete;});
+
+  public introToggled(event:boolean) {
+    this.introDown = event;
+  }
 
 }

@@ -11,13 +11,23 @@ import {Component, Input, Output, EventEmitter} from "angular2/core";
 export class Hud {
 	
 	@Input()  public infoButton:boolean;
+	@Input()  public introButton:boolean;
 	@Output() public infoToggled:EventEmitter<boolean> = new EventEmitter<boolean>();
+	@Output() public introToggled:EventEmitter<boolean> = new EventEmitter<boolean>();
 	public static infoDown:boolean = true;
+	public introDown:boolean = true;
 	
 	public toggleInfo():void {
 		this.infoDown = ! this.infoDown;
 		if (this.infoToggled) {
 			this.infoToggled.emit(this.infoDown);
+		}
+	}
+  
+	public toggleIntro():void {
+		this.introDown = ! this.introDown;
+		if (this.introToggled) {
+			this.introToggled.emit(this.introDown);
 		}
 	}
 	

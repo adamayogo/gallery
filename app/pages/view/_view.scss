@@ -4,6 +4,8 @@
 
 @mixin view($multi) {
 
+  $multiText: ($multi + 1) / 2;
+
   $_hudHeight: $hudHeight * $multi;
 
   .hud ~ .view {
@@ -91,60 +93,60 @@
 	  @extend .arrow;
 	  right: 10px*$multi;
 	}
-	
-	.info {
-	  
-	  .title {
-		font-size: 22px*$multi;
-		text-transform: uppercase;
-		font-weight: 100;
-	  }
-	  
-	  p {
-		margin: 14px*$multi 0;
-	  }
-	  
-	  position: absolute;
-	  max-width: 800px;
-	  max-height: calc(100vh - #{$_hudHeight});
-	  right: 0;
-	  overflow-y: auto;
-	  
-	  border-radius: 0 0 15px*$multi 15px*$multi;
-	  padding: 20px*$multi;
-	  margin: 0 10px;
-	  letter-spacing: 0.8px;
-	  
-	  font-size: 18px*$multi;
-	  
-	  color: $offWhite;
-	  background-color: rgba($charcoal, 0.8);
+    .info {
+      position: absolute;
+    }
+  }
+  .info {
 
-	  transform: translate3d(0,0,0);
-	  transition: transform 0.25s ease;
+    .title {
+      font-size: 22px*$multiText;
+      text-transform: uppercase;
+      font-weight: 100;
+    }
 
-	  ol {
-		list-style: decimal;
-		margin: 10px*$multi 0;
-	  }
-	  ul {
-		list-style: circle;
-		margin: 10px*$multi 0;
-	  }
-	  li {
-		display: list-item;
-		margin-left: 1.5em;
-	  }
-	  
-	  a {
-		color: #eaeaea;
-		font-weight: 500;
-	  }
-	}
-	.info-down {
-	  transform: translate3d(0,-100%,0);
-	}
+    p {
+      margin: 14px*$multiText 0;
+    }
 
+    max-width: 800px;
+    max-height: calc(100vh - #{$_hudHeight});
+    right: 0;
+    overflow-y: auto;
+
+    border-radius: 0 0 15px*$multi 15px*$multi;
+    padding: 20px*$multi;
+    margin: 0 10px;
+    letter-spacing: 0.8px * $multiText;
+
+    font-size: 18px*$multiText;
+
+    color: $offWhite;
+    background-color: rgba($charcoal, 0.8);
+
+    transform: translate3d(0,0,0);
+    transition: transform 0.25s ease;
+
+    ol {
+      list-style: decimal;
+      margin: 10px*$multiText 0;
+    }
+    ul {
+      list-style: circle;
+      margin: 10px*$multiText 0;
+    }
+    li {
+      display: list-item;
+      margin-left: 1.5em;
+    }
+
+    a {
+      color: #eaeaea;
+      font-weight: 500;
+    }
+  }
+  .info-down {
+    transform: translate3d(0,-102%,0);
   }
 }
 

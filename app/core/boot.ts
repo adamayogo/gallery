@@ -13,10 +13,10 @@ import {HTTP_PROVIDERS} from "angular2/http";
 import {LocationStrategy, HashLocationStrategy, ROUTER_PROVIDERS} from "angular2/router";
 
 // enable production mode of Angular
-//enableProdMode();
+enableProdMode();
 
 // bootstrap our app
-console.log("Bootstrapping the App");
+//console.log("Bootstrapping the App");
 
 // in [] is the list of injector bindings. Those bindings are used when an injector is created. Passing these here make the bindings available application-wide
 bootstrap(App, [
@@ -28,6 +28,6 @@ bootstrap(App, [
 	//provide(LocationStrategy, { useClass: HTML5LocationStrategy }) // enable HTML5 history API location strategy
 
 ]).then(
-	(success:any) => console.log("Bootstrap successful"),
+	(success:any) => { return;},//console.log("Bootstrap successful"),
 	(error:any) => console.error(error)
 );

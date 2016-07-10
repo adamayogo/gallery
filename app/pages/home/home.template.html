@@ -1,4 +1,12 @@
-<hud class="hud" [infoButton]="false"></hud>
+<hud class="hud" [infoButton]="false" [introButton]="true" (introToggled)="introToggled($event)"></hud>
+<!-- Info panel -->
+<div class="info info-home"
+     [ngClass]="{'info-down': introDown }">
+  <h3 class="title">Huh?!</h3>
+  <p>Between October 2015 and January 2016, I committed myself to a daily art/design/something exercise, inspired by <a href="https://thegreatdiscontent.com/100days" target="_blank">#The100DayProject</a>, which was undertaken en masse between the previous April and July (and is currently underway once again for 2016 at the time of writing). It had finished before I learned about it, so I just started on it outside of any schedule.</p>
+  <p>The idea is very simple, but awesome: pick a thing to do, and do it every day for one hundred days. My goal was on the vague side, but it let me cover a few different skills that I hoped to acquire or brush up on. To keep me honest (and driven by the fear of public failure), I posted everything to <a href="https://twitter.com/hanenbro" target="_blank">Twitter</a> as I went, but that didn't yield an effective means to review everything. Hence, this site! Now I can both massage and mutilate my ego with the high- and lowlights of the project, all in one convenient place.</p>
+  <p>As an aside, I'd encourage anyone checking this out to consider signing up for something similar. Getting motivated is hard, but publicly committing to something is easy, and accomplishing the things you've long wanted to do feels great.</p>
+</div>
 <div class="thumbs">
 	<div class="thumb" *ngFor="#art of Artifacts">
 		<!--<a [href]="'/#/'+art.id">-->
