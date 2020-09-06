@@ -47,7 +47,7 @@
     "karma-jasmine": "0.3.x",
     "tsd": "0.6.5",
     "google-spreadsheets": "~0.4.1",
-    "googleapis": "^2.0.4",
+    "googleapis": "^59.0.0",
     "opener": "^1.4.1",
     "read": "^1.0.6"
   },
